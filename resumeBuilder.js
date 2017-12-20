@@ -1,34 +1,34 @@
 var bio = {
-	"name" : "luis",
-	"role" : "code Ninja",
+	"name" : "luis Ramirez",
+	"role" : "Web Developer",
 	"contacts" : {
-		"mobile" : "323-775-630",
+		"mobile" : "323-775-6830",
 		"email" : "l.r.32@hotmail.com",
 		"github" : "aztecdaddy",
 		"twitter" : "apex1776",
 		"location": "Los Angeles, CA",
 	},
-	"welcomeMessage" : "hello jossy how is your day, I came i saw and then i came again. But on a serious note this is my project for this online class its pretty nice if you can dig it sucka",
-	"skills" : ["sexy", "smart", "SSJ", "killer"],
-	"bioPic" : "images/love.jpg"
+	"welcomeMessage" : "hello friends how is your day, this is my resume the code is in github.",
+	"skills" : ["HTML", "CSS", "javaScript", "Jquery"],
+	"bioPic" : "images/sexyPic.jpg"
 };
 
 var work = {
 	"jobs": [
 	{
 		"employer": "WWE",
-		"title": "wrestler",
-		"dates": "2011-2017",
+		"title": "front-End Developer",
+		"dates": "2015-2017",
 		"location": "New York, NY",
-		"description": "i was the top draw in the industry and you cant teach that",
+		"description": "I was the one that handled the dirty work.",
 		"url": "http://www.wwe.com"
 	},
 	{
-		"employer": "new japan pro wrestling",
-		"title": "gaijin",
-		"dates": "2005-2011",
+		"employer": "New Japan Pro Wrestling",
+		"title": "Web Developer",
+		"dates": "2011-2014",
 		"location": "tokyo",
-		"description": "It was an honor living in japan and wrestling the biggest names in japan while also playing dota"
+		"description": "It was an honor living in Japan and working there."
 	}
 	]
 };
@@ -37,12 +37,12 @@ var work = {
 var projects = {
 	"projects": [
 	{
-		"title": "sample project 1",
+		"title": "Movie trailers",
 		"dates": "2017",
 		"description": "its a movie website that plays the trailers of my favorite films",
 		"images": [
-		"https://pm1.narvii.com/6135/8154c5fa3bf3443853c794a246a567f0ef14e07f_hq.jpg",
-		"https://orig00.deviantart.net/23b4/f/2013/321/4/9/trunks_gohan01_by_goddessmechanic2-d6ulcjv.jpg"
+		"http://vsmart-solutions.com/assets/images/web-dev.png",
+		"https://cdn.makeuseof.com/wp-content/uploads/2016/10/programming-journal-overview.jpg"
 		]
 	}
 	]
@@ -106,9 +106,9 @@ var formattedSkill = HTMLskills.replace("%data%", bio.skills[0]);
 	formattedSkill = HTMLskills.replace("%data%", bio.skills[3]);
 	$("#skills").append(formattedSkill);
 	
-	var name = "David Reyes"
+	var name = "Luis Ramirez"
 	var formattedName = HTMLheaderName.replace("%data%", name);
-	var role = "The Best in the World"
+	var role = "Web Developer"
 	var formattedRole = HTMLheaderRole.replace("%data%", role);
 	$("#header").prepend(formattedRole);
 	$("#header").prepend(formattedName);
